@@ -17,11 +17,14 @@ class TranslatorController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .green
+        view.backgroundColor = .clear
         setupUI()
+
 
         translatorView.pickerBotLanguage.delegate = self
         translatorView.pickerBotLanguage.dataSource = self
+
+        translatorView.topTextView.delegate = self
     }
 
     private func setupUI() {
@@ -31,6 +34,18 @@ class TranslatorController: UIViewController {
          translatorView.leftAnchor.constraint(equalTo: view.leftAnchor),
          translatorView.rightAnchor.constraint(equalTo: view.rightAnchor),
          translatorView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)].forEach({$0.isActive = true})
+    }
+
+    private func fetch(text: String) {
+        guard let text = text.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
+
+        DispatchQueue.global(qos: .userInteractive).async {
+            ServiceTranslator.shared.downloadFromServer(text: text, languageTranslation: self.languageTranslation, completionHandler: { (translator) in
+                DispatchQueue.main.async {
+                    self.translatorView.botTextView.text = translator.translatedText
+                }
+            })
+        }
     }
 }
 
@@ -59,5 +74,22 @@ extension TranslatorController: UIPickerViewDelegate, UIPickerViewDataSource {
         }
 
         return pickerLabelBot
+    }
+}
+
+extension TranslatorController: UITextViewDelegate {
+
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        fetch(text: translatorView.topTextView.text)
+        self.view.endEditing(true)
+    }
+
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            fetch(text: translatorView.topTextView.text)
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
     }
 }
