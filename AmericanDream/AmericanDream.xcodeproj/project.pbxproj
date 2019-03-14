@@ -17,6 +17,8 @@
 		46CA505E223AB2E900E1BB0C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505D223AB2E900E1BB0C /* Service.swift */; };
 		46CA5060223AB5CA00E1BB0C /* TranslateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */; };
 		46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5062223AB68700E1BB0C /* json-helpers.swift */; };
+		46CA5069223AB8F400E1BB0C /* TranslatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5068223AB8F400E1BB0C /* TranslatorController.swift */; };
+		46CA506B223AB95600E1BB0C /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506A223AB95600E1BB0C /* TranslatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		46CA505D223AB2E900E1BB0C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateServiceTests.swift; sourceTree = "<group>"; };
 		46CA5062223AB68700E1BB0C /* json-helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "json-helpers.swift"; sourceTree = "<group>"; };
+		46CA5068223AB8F400E1BB0C /* TranslatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorController.swift; sourceTree = "<group>"; };
+		46CA506A223AB95600E1BB0C /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				46CA5061223AB67A00E1BB0C /* Helpers */,
 				46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */,
 				46CA505D223AB2E900E1BB0C /* Service.swift */,
+				46CA5068223AB8F400E1BB0C /* TranslatorController.swift */,
+				46CA506A223AB95600E1BB0C /* TranslatorView.swift */,
 			);
 			name = Translator;
 			sourceTree = "<group>";
@@ -225,11 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CA506B223AB95600E1BB0C /* TranslatorView.swift in Sources */,
 				46415255223AAF8D00A9F1FE /* ViewController.swift in Sources */,
 				46CA505E223AB2E900E1BB0C /* Service.swift in Sources */,
 				46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */,
 				46415253223AAF8D00A9F1FE /* AppDelegate.swift in Sources */,
 				46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */,
+				46CA5069223AB8F400E1BB0C /* TranslatorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
