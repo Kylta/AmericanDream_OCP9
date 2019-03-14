@@ -13,6 +13,10 @@
 		4641525A223AAF9600A9F1FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46415259223AAF9600A9F1FE /* Assets.xcassets */; };
 		4641525D223AAF9600A9F1FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4641525B223AAF9600A9F1FE /* LaunchScreen.storyboard */; };
 		46415268223AAF9600A9F1FE /* AmericanDreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46415267223AAF9600A9F1FE /* AmericanDreamTests.swift */; };
+		46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */; };
+		46CA505E223AB2E900E1BB0C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505D223AB2E900E1BB0C /* Service.swift */; };
+		46CA5060223AB5CA00E1BB0C /* TranslateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */; };
+		46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5062223AB68700E1BB0C /* json-helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		46415263223AAF9600A9F1FE /* AmericanDreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmericanDreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46415267223AAF9600A9F1FE /* AmericanDreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericanDreamTests.swift; sourceTree = "<group>"; };
 		46415269223AAF9600A9F1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorItem.swift; sourceTree = "<group>"; };
+		46CA505D223AB2E900E1BB0C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateServiceTests.swift; sourceTree = "<group>"; };
+		46CA5062223AB68700E1BB0C /* json-helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "json-helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 				46415259223AAF9600A9F1FE /* Assets.xcassets */,
 				4641525B223AAF9600A9F1FE /* LaunchScreen.storyboard */,
 				4641525E223AAF9600A9F1FE /* Info.plist */,
+				46CA505A223AB2AB00E1BB0C /* Translator */,
 			);
 			path = AmericanDream;
 			sourceTree = "<group>";
@@ -91,9 +100,28 @@
 			isa = PBXGroup;
 			children = (
 				46415267223AAF9600A9F1FE /* AmericanDreamTests.swift */,
+				46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */,
 				46415269223AAF9600A9F1FE /* Info.plist */,
 			);
 			path = AmericanDreamTests;
+			sourceTree = "<group>";
+		};
+		46CA505A223AB2AB00E1BB0C /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				46CA5061223AB67A00E1BB0C /* Helpers */,
+				46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */,
+				46CA505D223AB2E900E1BB0C /* Service.swift */,
+			);
+			name = Translator;
+			sourceTree = "<group>";
+		};
+		46CA5061223AB67A00E1BB0C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46CA5062223AB68700E1BB0C /* json-helpers.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				46415255223AAF8D00A9F1FE /* ViewController.swift in Sources */,
+				46CA505E223AB2E900E1BB0C /* Service.swift in Sources */,
+				46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */,
 				46415253223AAF8D00A9F1FE /* AppDelegate.swift in Sources */,
+				46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CA5060223AB5CA00E1BB0C /* TranslateServiceTests.swift in Sources */,
 				46415268223AAF9600A9F1FE /* AmericanDreamTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
