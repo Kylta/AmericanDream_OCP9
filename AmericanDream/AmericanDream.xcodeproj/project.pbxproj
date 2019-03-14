@@ -19,6 +19,7 @@
 		46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5062223AB68700E1BB0C /* json-helpers.swift */; };
 		46CA5069223AB8F400E1BB0C /* TranslatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5068223AB8F400E1BB0C /* TranslatorController.swift */; };
 		46CA506B223AB95600E1BB0C /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506A223AB95600E1BB0C /* TranslatorView.swift */; };
+		46CA506E223ABF7000E1BB0C /* ExchangeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		46CA5062223AB68700E1BB0C /* json-helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "json-helpers.swift"; sourceTree = "<group>"; };
 		46CA5068223AB8F400E1BB0C /* TranslatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorController.swift; sourceTree = "<group>"; };
 		46CA506A223AB95600E1BB0C /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
+		46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				46415259223AAF9600A9F1FE /* Assets.xcassets */,
 				4641525B223AAF9600A9F1FE /* LaunchScreen.storyboard */,
 				4641525E223AAF9600A9F1FE /* Info.plist */,
+				46CA506C223ABF3900E1BB0C /* Exchange */,
 				46CA505A223AB2AB00E1BB0C /* Translator */,
 			);
 			path = AmericanDream;
@@ -128,6 +131,14 @@
 				46CA5062223AB68700E1BB0C /* json-helpers.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		46CA506C223ABF3900E1BB0C /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */,
+			);
+			path = Exchange;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 				46415253223AAF8D00A9F1FE /* AppDelegate.swift in Sources */,
 				46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */,
 				46CA5069223AB8F400E1BB0C /* TranslatorController.swift in Sources */,
+				46CA506E223ABF7000E1BB0C /* ExchangeItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
