@@ -20,6 +20,8 @@
 		46CA5069223AB8F400E1BB0C /* TranslatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5068223AB8F400E1BB0C /* TranslatorController.swift */; };
 		46CA506B223AB95600E1BB0C /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506A223AB95600E1BB0C /* TranslatorView.swift */; };
 		46CA506E223ABF7000E1BB0C /* ExchangeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */; };
+		46CA5070223AC09100E1BB0C /* ExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506F223AC09100E1BB0C /* ExchangeService.swift */; };
+		46CA5072223CD72700E1BB0C /* ExchangeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5071223CD72700E1BB0C /* ExchangeServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		46CA5068223AB8F400E1BB0C /* TranslatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorController.swift; sourceTree = "<group>"; };
 		46CA506A223AB95600E1BB0C /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
 		46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeItem.swift; sourceTree = "<group>"; };
+		46CA506F223AC09100E1BB0C /* ExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeService.swift; sourceTree = "<group>"; };
+		46CA5071223CD72700E1BB0C /* ExchangeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 			children = (
 				46415267223AAF9600A9F1FE /* AmericanDreamTests.swift */,
 				46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */,
+				46CA5071223CD72700E1BB0C /* ExchangeServiceTests.swift */,
 				46415269223AAF9600A9F1FE /* Info.plist */,
 			);
 			path = AmericanDreamTests;
@@ -137,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */,
+				46CA506F223AC09100E1BB0C /* ExchangeService.swift */,
 			);
 			path = Exchange;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 			files = (
 				46CA506B223AB95600E1BB0C /* TranslatorView.swift in Sources */,
 				46415255223AAF8D00A9F1FE /* ViewController.swift in Sources */,
+				46CA5070223AC09100E1BB0C /* ExchangeService.swift in Sources */,
 				46CA505E223AB2E900E1BB0C /* Service.swift in Sources */,
 				46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */,
 				46415253223AAF8D00A9F1FE /* AppDelegate.swift in Sources */,
@@ -257,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CA5072223CD72700E1BB0C /* ExchangeServiceTests.swift in Sources */,
 				46CA5060223AB5CA00E1BB0C /* TranslateServiceTests.swift in Sources */,
 				46415268223AAF9600A9F1FE /* AmericanDreamTests.swift in Sources */,
 			);
