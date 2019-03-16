@@ -22,7 +22,27 @@ public struct ExchangeModel: Equatable {
         self.currency = currency
     }
 
-    public func getEmojiFlag(regionCode: String) -> String {
+    var currenciesKeys: [String] {
+        return currency.sorted(by: { $0.value < $1.value }).map { $0.key }
+    }
+
+    var currenciesValues: [Double] {
+        return currency.sorted(by: { $0.value < $1.value }).map { $0.value }
+    }
+
+    var emojiFlags: [String] {
+        var flags = [String]()
+        currenciesKeys.forEach { flags.append(formatEmojiFlag(regionCode: $0))}
+        return flags
+    }
+
+    var symbolCurrencies: [String] {
+        var symbols = [String]()
+        currenciesKeys.forEach { symbols.append(getSymbol(forCurrencyCode: $0)!)}
+        return symbols
+    }
+
+    private func formatEmojiFlag(regionCode: String) -> String {
         var code = regionCode.uppercased()
         code.removeLast()
         var flagString = ""
@@ -34,7 +54,7 @@ public struct ExchangeModel: Equatable {
         return flagString
     }
 
-    public func getSymbol(forCurrencyCode code: String) -> String? {
+    private func getSymbol(forCurrencyCode code: String) -> String? {
         let locale = NSLocale(localeIdentifier: code)
         return locale.displayName(forKey: .currencySymbol, value: code)
     }
@@ -44,25 +64,25 @@ internal final class ExchangeItemMapper: Decodable {
     let timestamp: Int
     let base: String
     let date: String
-    let rates: Rates
+    var rates: Rates
 
     var genericItem: ExchangeModel {
         return ExchangeModel(timestamp: timestamp, date: date, base: base, currency: rates.getCurrencies())
     }
 
     struct Rates: Decodable {
-        let gbp: Double
-        let cad: Double
-        let aud: Double
-        let jpy: Double
-        let cny: Double
-        let inr: Double
-        let sgd: Double
-        let brl: Double
-        let idr: Double
-        let vnd: Double
-        let mxn: Double
-        let usd: Double
+        var gbp: Double
+        var cad: Double
+        var aud: Double
+        var jpy: Double
+        var cny: Double
+        var inr: Double
+        var sgd: Double
+        var brl: Double
+        var idr: Double
+        var vnd: Double
+        var mxn: Double
+        var usd: Double
 
         enum CodingKeys: String, CodingKey {
             case gbp = "GBP"

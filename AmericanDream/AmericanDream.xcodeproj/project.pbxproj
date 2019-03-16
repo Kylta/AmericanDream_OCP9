@@ -22,6 +22,11 @@
 		46CA506E223ABF7000E1BB0C /* ExchangeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */; };
 		46CA5070223AC09100E1BB0C /* ExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506F223AC09100E1BB0C /* ExchangeService.swift */; };
 		46CA5072223CD72700E1BB0C /* ExchangeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5071223CD72700E1BB0C /* ExchangeServiceTests.swift */; };
+		46F3D482223CD94600E240F3 /* ExchangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D481223CD94600E240F3 /* ExchangeController.swift */; };
+		46F3D484223CD98F00E240F3 /* ExchangeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D483223CD98F00E240F3 /* ExchangeHeader.swift */; };
+		46F3D486223CD9AA00E240F3 /* ExchangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D485223CD9AA00E240F3 /* ExchangeCell.swift */; };
+		46F3D488223CEB8100E240F3 /* UIColor-helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D487223CEB8100E240F3 /* UIColor-helpers.swift */; };
+		46F3D48A223CF47300E240F3 /* RoundedHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D489223CF47300E240F3 /* RoundedHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,11 @@
 		46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeItem.swift; sourceTree = "<group>"; };
 		46CA506F223AC09100E1BB0C /* ExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeService.swift; sourceTree = "<group>"; };
 		46CA5071223CD72700E1BB0C /* ExchangeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeServiceTests.swift; sourceTree = "<group>"; };
+		46F3D481223CD94600E240F3 /* ExchangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeController.swift; sourceTree = "<group>"; };
+		46F3D483223CD98F00E240F3 /* ExchangeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeHeader.swift; sourceTree = "<group>"; };
+		46F3D485223CD9AA00E240F3 /* ExchangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCell.swift; sourceTree = "<group>"; };
+		46F3D487223CEB8100E240F3 /* UIColor-helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-helpers.swift"; sourceTree = "<group>"; };
+		46F3D489223CF47300E240F3 /* RoundedHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,8 @@
 				4641525E223AAF9600A9F1FE /* Info.plist */,
 				46CA506C223ABF3900E1BB0C /* Exchange */,
 				46CA505A223AB2AB00E1BB0C /* Translator */,
+				46F3D487223CEB8100E240F3 /* UIColor-helpers.swift */,
+				46F3D489223CF47300E240F3 /* RoundedHelpers.swift */,
 			);
 			path = AmericanDream;
 			sourceTree = "<group>";
@@ -142,7 +154,10 @@
 			isa = PBXGroup;
 			children = (
 				46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */,
+				46F3D485223CD9AA00E240F3 /* ExchangeCell.swift */,
 				46CA506F223AC09100E1BB0C /* ExchangeService.swift */,
+				46F3D481223CD94600E240F3 /* ExchangeController.swift */,
+				46F3D483223CD98F00E240F3 /* ExchangeHeader.swift */,
 			);
 			path = Exchange;
 			sourceTree = "<group>";
@@ -248,14 +263,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F3D486223CD9AA00E240F3 /* ExchangeCell.swift in Sources */,
 				46CA506B223AB95600E1BB0C /* TranslatorView.swift in Sources */,
+				46F3D484223CD98F00E240F3 /* ExchangeHeader.swift in Sources */,
 				46415255223AAF8D00A9F1FE /* ViewController.swift in Sources */,
 				46CA5070223AC09100E1BB0C /* ExchangeService.swift in Sources */,
 				46CA505E223AB2E900E1BB0C /* Service.swift in Sources */,
 				46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */,
 				46415253223AAF8D00A9F1FE /* AppDelegate.swift in Sources */,
+				46F3D488223CEB8100E240F3 /* UIColor-helpers.swift in Sources */,
+				46F3D48A223CF47300E240F3 /* RoundedHelpers.swift in Sources */,
 				46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */,
 				46CA5069223AB8F400E1BB0C /* TranslatorController.swift in Sources */,
+				46F3D482223CD94600E240F3 /* ExchangeController.swift in Sources */,
 				46CA506E223ABF7000E1BB0C /* ExchangeItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
