@@ -1,21 +1,21 @@
 //
-//  TranslateServiceTests.swift
+//  WeatherServiceTests.swift
 //  AmericanDreamTests
 //
-//  Created by Christophe Bugnon on 14/03/2019.
+//  Created by Christophe Bugnon on 18/03/2019.
 //  Copyright © 2019 Christophe Bugnon. All rights reserved.
 //
 
 import XCTest
 @testable import AmericanDream
 
-class TranslateServiceTests: XCTestCase {
+class WeatherServiceTests: XCTestCase {
 
     func test_downloadFromServer_sendRequestFromUrl() {
         let exp = expectation(description: "wait for completion")
 
-        ServiceTranslator.shared.downloadFromServer(text: "Hello", languageTranslation: "fr") { model in
-            XCTAssertEqual(model.translatedText, "Bonjour")
+        WeatherService.shared.downloadFromServer(city: "Paris") { weather in
+            XCTAssertEqual(weather.name, "Paris")
             exp.fulfill()
         }
 
