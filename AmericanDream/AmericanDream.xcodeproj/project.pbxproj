@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		46415253223AAF8D00A9F1FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46415252223AAF8D00A9F1FE /* AppDelegate.swift */; };
 		46415255223AAF8D00A9F1FE /* AmericanTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46415254223AAF8D00A9F1FE /* AmericanTabBarController.swift */; };
-		46415258223AAF8D00A9F1FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46415256223AAF8D00A9F1FE /* Main.storyboard */; };
 		4641525A223AAF9600A9F1FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46415259223AAF9600A9F1FE /* Assets.xcassets */; };
 		4641525D223AAF9600A9F1FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4641525B223AAF9600A9F1FE /* LaunchScreen.storyboard */; };
 		46415268223AAF9600A9F1FE /* AmericanDreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46415267223AAF9600A9F1FE /* AmericanDreamTests.swift */; };
@@ -51,7 +50,6 @@
 		4641524F223AAF8D00A9F1FE /* AmericanDream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmericanDream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46415252223AAF8D00A9F1FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46415254223AAF8D00A9F1FE /* AmericanTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericanTabBarController.swift; sourceTree = "<group>"; };
-		46415257223AAF8D00A9F1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46415259223AAF9600A9F1FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4641525C223AAF9600A9F1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4641525E223AAF9600A9F1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,16 +119,12 @@
 		46415251223AAF8D00A9F1FE /* AmericanDream */ = {
 			isa = PBXGroup;
 			children = (
-				46415252223AAF8D00A9F1FE /* AppDelegate.swift */,
 				46415254223AAF8D00A9F1FE /* AmericanTabBarController.swift */,
-				46415256223AAF8D00A9F1FE /* Main.storyboard */,
-				46415259223AAF9600A9F1FE /* Assets.xcassets */,
-				4641525B223AAF9600A9F1FE /* LaunchScreen.storyboard */,
-				4641525E223AAF9600A9F1FE /* Info.plist */,
 				46CA5061223AB67A00E1BB0C /* Helpers */,
 				46ACD77A223F8BF1003D1D8B /* Weather */,
 				46CA506C223ABF3900E1BB0C /* Exchange */,
 				46CA505A223AB2AB00E1BB0C /* Translator */,
+				46ACD78C223F9F15003D1D8B /* Supporting Files */,
 			);
 			path = AmericanDream;
 			sourceTree = "<group>";
@@ -157,6 +151,17 @@
 				46ACD789223F9329003D1D8B /* WeatherController.swift */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		46ACD78C223F9F15003D1D8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46415252223AAF8D00A9F1FE /* AppDelegate.swift */,
+				46415259223AAF9600A9F1FE /* Assets.xcassets */,
+				4641525B223AAF9600A9F1FE /* LaunchScreen.storyboard */,
+				4641525E223AAF9600A9F1FE /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		46CA505A223AB2AB00E1BB0C /* Translator */ = {
@@ -277,7 +282,6 @@
 			files = (
 				4641525D223AAF9600A9F1FE /* LaunchScreen.storyboard in Resources */,
 				4641525A223AAF9600A9F1FE /* Assets.xcassets in Resources */,
-				46415258223AAF8D00A9F1FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		46415256223AAF8D00A9F1FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46415257223AAF8D00A9F1FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4641525B223AAF9600A9F1FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -482,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78BZCUCGN3;
-				INFOPLIST_FILE = AmericanDream/Info.plist;
+				INFOPLIST_FILE = "AmericanDream/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78BZCUCGN3;
-				INFOPLIST_FILE = AmericanDream/Info.plist;
+				INFOPLIST_FILE = "AmericanDream/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
