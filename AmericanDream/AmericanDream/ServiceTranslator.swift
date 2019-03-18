@@ -25,7 +25,9 @@ struct ServiceTranslator {
                 print("Failed to fetch from server:", err)
             }
 
-            guard let data = data, let response = response as? HTTPURLResponse else { return }
+            guard let data = data,
+                let response = response as? HTTPURLResponse,
+                response.statusCode == 200 else { return }
 
             if let jsonTranslator = TranslateItemMapper.map(data, response) {
                 completionHandler(jsonTranslator)
