@@ -20,6 +20,8 @@
 		46ACD786223F9253003D1D8B /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD785223F9253003D1D8B /* WeatherServiceTests.swift */; };
 		46ACD788223F92F9003D1D8B /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD787223F92F9003D1D8B /* WeatherView.swift */; };
 		46ACD78A223F9329003D1D8B /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD789223F9329003D1D8B /* WeatherController.swift */; };
+		46ACD78E223FA216003D1D8B /* PickerController+TranslatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD78D223FA216003D1D8B /* PickerController+TranslatorController.swift */; };
+		46ACD790223FA238003D1D8B /* TextView+TranslatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD78F223FA238003D1D8B /* TextView+TranslatorController.swift */; };
 		46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */; };
 		46CA505E223AB2E900E1BB0C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505D223AB2E900E1BB0C /* Service.swift */; };
 		46CA5060223AB5CA00E1BB0C /* TranslateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */; };
@@ -64,6 +66,8 @@
 		46ACD785223F9253003D1D8B /* WeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
 		46ACD787223F92F9003D1D8B /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		46ACD789223F9329003D1D8B /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
+		46ACD78D223FA216003D1D8B /* PickerController+TranslatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PickerController+TranslatorController.swift"; sourceTree = "<group>"; };
+		46ACD78F223FA238003D1D8B /* TextView+TranslatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+TranslatorController.swift"; sourceTree = "<group>"; };
 		46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorItem.swift; sourceTree = "<group>"; };
 		46CA505D223AB2E900E1BB0C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateServiceTests.swift; sourceTree = "<group>"; };
@@ -170,8 +174,10 @@
 				46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */,
 				46ACD778223F8B71003D1D8B /* TranslatorMapper.swift */,
 				46CA505D223AB2E900E1BB0C /* Service.swift */,
+				46ACD78F223FA238003D1D8B /* TextView+TranslatorController.swift */,
 				46CA5068223AB8F400E1BB0C /* TranslatorController.swift */,
 				46CA506A223AB95600E1BB0C /* TranslatorView.swift */,
+				46ACD78D223FA216003D1D8B /* PickerController+TranslatorController.swift */,
 			);
 			name = Translator;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 				46CA5070223AC09100E1BB0C /* ExchangeService.swift in Sources */,
 				46CA505E223AB2E900E1BB0C /* Service.swift in Sources */,
 				46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */,
+				46ACD790223FA238003D1D8B /* TextView+TranslatorController.swift in Sources */,
 				46415253223AAF8D00A9F1FE /* AppDelegate.swift in Sources */,
 				46F3D488223CEB8100E240F3 /* UIColor-helpers.swift in Sources */,
 				46F3D48A223CF47300E240F3 /* Rounded+Double.swift in Sources */,
@@ -320,6 +327,7 @@
 				46F3D482223CD94600E240F3 /* ExchangeController.swift in Sources */,
 				46CA506E223ABF7000E1BB0C /* ExchangeItem.swift in Sources */,
 				46ACD77E223F8C22003D1D8B /* WeatherItem.swift in Sources */,
+				46ACD78E223FA216003D1D8B /* PickerController+TranslatorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

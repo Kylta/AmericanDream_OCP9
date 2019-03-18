@@ -39,7 +39,7 @@ class TranslatorController: UIViewController {
          translatorView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)].forEach({$0.isActive = true})
     }
 
-    private func fetch(text: String) {
+    func fetch(text: String) {
         guard let text = text.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
 
         DispatchQueue.global(qos: .userInteractive).async {
@@ -49,50 +49,5 @@ class TranslatorController: UIViewController {
                 }
             })
         }
-    }
-}
-
-extension TranslatorController: UIPickerViewDelegate, UIPickerViewDataSource {
-
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return model.data.count
-    }
-
-    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-        return CGFloat(40)
-    }
-
-    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-        let pickerLabelBot = UILabel()
-        pickerLabelBot.text = model.data[row]
-        pickerLabelBot.textAlignment = .center
-
-        if let text = pickerLabelBot.text {
-            languageTranslation = text
-            return pickerLabelBot
-        }
-
-        return pickerLabelBot
-    }
-}
-
-extension TranslatorController: UITextViewDelegate {
-
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        fetch(text: translatorView.topTextView.text)
-        self.view.endEditing(true)
-    }
-
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if text == "\n" {
-            fetch(text: translatorView.topTextView.text)
-            textView.resignFirstResponder()
-            return false
-        }
-        return true
     }
 }
