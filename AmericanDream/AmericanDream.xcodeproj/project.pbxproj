@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46415253223AAF8D00A9F1FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46415252223AAF8D00A9F1FE /* AppDelegate.swift */; };
-		46415255223AAF8D00A9F1FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46415254223AAF8D00A9F1FE /* ViewController.swift */; };
+		46415255223AAF8D00A9F1FE /* AmericanTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46415254223AAF8D00A9F1FE /* AmericanTabBarController.swift */; };
 		46415258223AAF8D00A9F1FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46415256223AAF8D00A9F1FE /* Main.storyboard */; };
 		4641525A223AAF9600A9F1FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46415259223AAF9600A9F1FE /* Assets.xcassets */; };
 		4641525D223AAF9600A9F1FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4641525B223AAF9600A9F1FE /* LaunchScreen.storyboard */; };
@@ -50,7 +50,7 @@
 /* Begin PBXFileReference section */
 		4641524F223AAF8D00A9F1FE /* AmericanDream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmericanDream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46415252223AAF8D00A9F1FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46415254223AAF8D00A9F1FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46415254223AAF8D00A9F1FE /* AmericanTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericanTabBarController.swift; sourceTree = "<group>"; };
 		46415257223AAF8D00A9F1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46415259223AAF9600A9F1FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4641525C223AAF9600A9F1FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,17 +121,16 @@
 		46415251223AAF8D00A9F1FE /* AmericanDream */ = {
 			isa = PBXGroup;
 			children = (
-				46ACD77A223F8BF1003D1D8B /* Weather */,
 				46415252223AAF8D00A9F1FE /* AppDelegate.swift */,
-				46415254223AAF8D00A9F1FE /* ViewController.swift */,
+				46415254223AAF8D00A9F1FE /* AmericanTabBarController.swift */,
 				46415256223AAF8D00A9F1FE /* Main.storyboard */,
 				46415259223AAF9600A9F1FE /* Assets.xcassets */,
 				4641525B223AAF9600A9F1FE /* LaunchScreen.storyboard */,
 				4641525E223AAF9600A9F1FE /* Info.plist */,
+				46CA5061223AB67A00E1BB0C /* Helpers */,
+				46ACD77A223F8BF1003D1D8B /* Weather */,
 				46CA506C223ABF3900E1BB0C /* Exchange */,
 				46CA505A223AB2AB00E1BB0C /* Translator */,
-				46F3D487223CEB8100E240F3 /* UIColor-helpers.swift */,
-				46F3D489223CF47300E240F3 /* Rounded+Double.swift */,
 			);
 			path = AmericanDream;
 			sourceTree = "<group>";
@@ -163,7 +162,6 @@
 		46CA505A223AB2AB00E1BB0C /* Translator */ = {
 			isa = PBXGroup;
 			children = (
-				46CA5061223AB67A00E1BB0C /* Helpers */,
 				46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */,
 				46ACD778223F8B71003D1D8B /* TranslatorMapper.swift */,
 				46CA505D223AB2E900E1BB0C /* Service.swift */,
@@ -176,6 +174,8 @@
 		46CA5061223AB67A00E1BB0C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				46F3D487223CEB8100E240F3 /* UIColor-helpers.swift */,
+				46F3D489223CF47300E240F3 /* Rounded+Double.swift */,
 				46CA5062223AB68700E1BB0C /* json-helpers.swift */,
 			);
 			name = Helpers;
@@ -299,7 +299,7 @@
 				46F3D486223CD9AA00E240F3 /* ExchangeCell.swift in Sources */,
 				46CA506B223AB95600E1BB0C /* TranslatorView.swift in Sources */,
 				46F3D484223CD98F00E240F3 /* ExchangeHeader.swift in Sources */,
-				46415255223AAF8D00A9F1FE /* ViewController.swift in Sources */,
+				46415255223AAF8D00A9F1FE /* AmericanTabBarController.swift in Sources */,
 				46ACD78A223F9329003D1D8B /* WeatherController.swift in Sources */,
 				46CA5070223AC09100E1BB0C /* ExchangeService.swift in Sources */,
 				46CA505E223AB2E900E1BB0C /* Service.swift in Sources */,

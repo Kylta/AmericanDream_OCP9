@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AmericanTabBarController.swift
 //  AmericanDream
 //
 //  Created by Christophe Bugnon on 14/03/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabBarController: UITabBarController {
+class AmericanTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
