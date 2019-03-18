@@ -24,7 +24,7 @@ internal final class TranslateItemMapper: Decodable {
     }
 
     internal static func map(_ data: Data, _ response: HTTPURLResponse) -> TranslateModel? {
-        guard response.statusCode == 200,
+        guard response.statusCode == OK_200,
             let json = try? Service.getJSON(from: data, atKeyPath: "data"),
             let translateItemMapper = try? JSONDecoder().decode(TranslateItemMapper.self, withJSONObject: json) else {
                 return nil
