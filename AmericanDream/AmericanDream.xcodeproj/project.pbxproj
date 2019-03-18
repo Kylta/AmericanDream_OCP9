@@ -13,6 +13,8 @@
 		4641525A223AAF9600A9F1FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46415259223AAF9600A9F1FE /* Assets.xcassets */; };
 		4641525D223AAF9600A9F1FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4641525B223AAF9600A9F1FE /* LaunchScreen.storyboard */; };
 		46415268223AAF9600A9F1FE /* AmericanDreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46415267223AAF9600A9F1FE /* AmericanDreamTests.swift */; };
+		46ACD777223F8B49003D1D8B /* ExchangeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD776223F8B48003D1D8B /* ExchangeMapper.swift */; };
+		46ACD779223F8B71003D1D8B /* TranslatorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD778223F8B71003D1D8B /* TranslatorMapper.swift */; };
 		46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */; };
 		46CA505E223AB2E900E1BB0C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505D223AB2E900E1BB0C /* Service.swift */; };
 		46CA5060223AB5CA00E1BB0C /* TranslateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */; };
@@ -50,6 +52,8 @@
 		46415263223AAF9600A9F1FE /* AmericanDreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmericanDreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46415267223AAF9600A9F1FE /* AmericanDreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericanDreamTests.swift; sourceTree = "<group>"; };
 		46415269223AAF9600A9F1FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46ACD776223F8B48003D1D8B /* ExchangeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeMapper.swift; sourceTree = "<group>"; };
+		46ACD778223F8B71003D1D8B /* TranslatorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorMapper.swift; sourceTree = "<group>"; };
 		46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorItem.swift; sourceTree = "<group>"; };
 		46CA505D223AB2E900E1BB0C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateServiceTests.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			children = (
 				46CA5061223AB67A00E1BB0C /* Helpers */,
 				46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */,
+				46ACD778223F8B71003D1D8B /* TranslatorMapper.swift */,
 				46CA505D223AB2E900E1BB0C /* Service.swift */,
 				46CA5068223AB8F400E1BB0C /* TranslatorController.swift */,
 				46CA506A223AB95600E1BB0C /* TranslatorView.swift */,
@@ -154,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */,
+				46ACD776223F8B48003D1D8B /* ExchangeMapper.swift */,
 				46F3D485223CD9AA00E240F3 /* ExchangeCell.swift */,
 				46CA506F223AC09100E1BB0C /* ExchangeService.swift */,
 				46F3D481223CD94600E240F3 /* ExchangeController.swift */,
@@ -263,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46ACD779223F8B71003D1D8B /* TranslatorMapper.swift in Sources */,
 				46F3D486223CD9AA00E240F3 /* ExchangeCell.swift in Sources */,
 				46CA506B223AB95600E1BB0C /* TranslatorView.swift in Sources */,
 				46F3D484223CD98F00E240F3 /* ExchangeHeader.swift in Sources */,
@@ -275,6 +282,7 @@
 				46F3D48A223CF47300E240F3 /* Rounded+Double.swift in Sources */,
 				46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */,
 				46CA5069223AB8F400E1BB0C /* TranslatorController.swift in Sources */,
+				46ACD777223F8B49003D1D8B /* ExchangeMapper.swift in Sources */,
 				46F3D482223CD94600E240F3 /* ExchangeController.swift in Sources */,
 				46CA506E223ABF7000E1BB0C /* ExchangeItem.swift in Sources */,
 			);

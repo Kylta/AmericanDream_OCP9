@@ -20,7 +20,6 @@ class TranslatorController: UIViewController {
         view.backgroundColor = .clear
         setupUI()
 
-
         translatorView.pickerBotLanguage.delegate = self
         translatorView.pickerBotLanguage.dataSource = self
 
