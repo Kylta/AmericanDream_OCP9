@@ -26,7 +26,7 @@
 		46F3D484223CD98F00E240F3 /* ExchangeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D483223CD98F00E240F3 /* ExchangeHeader.swift */; };
 		46F3D486223CD9AA00E240F3 /* ExchangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D485223CD9AA00E240F3 /* ExchangeCell.swift */; };
 		46F3D488223CEB8100E240F3 /* UIColor-helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D487223CEB8100E240F3 /* UIColor-helpers.swift */; };
-		46F3D48A223CF47300E240F3 /* RoundedHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D489223CF47300E240F3 /* RoundedHelpers.swift */; };
+		46F3D48A223CF47300E240F3 /* Rounded+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D489223CF47300E240F3 /* Rounded+Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,7 @@
 		46F3D483223CD98F00E240F3 /* ExchangeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeHeader.swift; sourceTree = "<group>"; };
 		46F3D485223CD9AA00E240F3 /* ExchangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCell.swift; sourceTree = "<group>"; };
 		46F3D487223CEB8100E240F3 /* UIColor-helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-helpers.swift"; sourceTree = "<group>"; };
-		46F3D489223CF47300E240F3 /* RoundedHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedHelpers.swift; sourceTree = "<group>"; };
+		46F3D489223CF47300E240F3 /* Rounded+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rounded+Double.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 				46CA506C223ABF3900E1BB0C /* Exchange */,
 				46CA505A223AB2AB00E1BB0C /* Translator */,
 				46F3D487223CEB8100E240F3 /* UIColor-helpers.swift */,
-				46F3D489223CF47300E240F3 /* RoundedHelpers.swift */,
+				46F3D489223CF47300E240F3 /* Rounded+Double.swift */,
 			);
 			path = AmericanDream;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 				46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */,
 				46415253223AAF8D00A9F1FE /* AppDelegate.swift in Sources */,
 				46F3D488223CEB8100E240F3 /* UIColor-helpers.swift in Sources */,
-				46F3D48A223CF47300E240F3 /* RoundedHelpers.swift in Sources */,
+				46F3D48A223CF47300E240F3 /* Rounded+Double.swift in Sources */,
 				46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */,
 				46CA5069223AB8F400E1BB0C /* TranslatorController.swift in Sources */,
 				46F3D482223CD94600E240F3 /* ExchangeController.swift in Sources */,

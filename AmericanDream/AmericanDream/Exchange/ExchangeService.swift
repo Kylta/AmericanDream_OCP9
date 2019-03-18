@@ -28,18 +28,19 @@ class ServiceExchange {
             }
 
             var rates = jsonExchangeRate.rates
-            rates.aud = RoundedHelper.formmated(value: &rates.aud, with: value)
-            rates.brl = RoundedHelper.formmated(value: &rates.brl, with: value)
-            rates.cad = RoundedHelper.formmated(value: &rates.cad, with: value)
-            rates.cny = RoundedHelper.formmated(value: &rates.cny, with: value)
-            rates.gbp = RoundedHelper.formmated(value: &rates.gbp, with: value)
-            rates.idr = RoundedHelper.formmated(value: &rates.idr, with: value)
-            rates.inr = RoundedHelper.formmated(value: &rates.inr, with: value)
-            rates.jpy = RoundedHelper.formmated(value: &rates.jpy, with: value)
-            rates.mxn = RoundedHelper.formmated(value: &rates.mxn, with: value)
-            rates.sgd = RoundedHelper.formmated(value: &rates.sgd, with: value)
-            rates.usd = RoundedHelper.formmated(value: &rates.usd, with: value)
-            rates.vnd = RoundedHelper.formmated(value: &rates.vnd, with: value)
+            rates.aud = rates.aud.rounded(toPlaces: 3, with: value)
+            rates.brl = rates.brl.rounded(toPlaces: 3, with: value)
+            rates.cad = rates.cad.rounded(toPlaces: 3, with: value)
+            rates.brl = rates.brl.rounded(toPlaces: 3, with: value)
+            rates.cny = rates.cny.rounded(toPlaces: 3, with: value)
+            rates.gbp = rates.gbp.rounded(toPlaces: 3, with: value)
+            rates.idr = rates.idr.rounded(toPlaces: 3, with: value)
+            rates.inr = rates.inr.rounded(toPlaces: 3, with: value)
+            rates.jpy = rates.jpy.rounded(toPlaces: 3, with: value)
+            rates.mxn = rates.mxn.rounded(toPlaces: 3, with: value)
+            rates.sgd = rates.sgd.rounded(toPlaces: 3, with: value)
+            rates.usd = rates.usd.rounded(toPlaces: 3, with: value)
+            rates.vnd = rates.vnd.rounded(toPlaces: 3, with: value)
 
             jsonExchangeRate.rates = rates
 
