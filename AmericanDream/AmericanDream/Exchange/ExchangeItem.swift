@@ -22,26 +22,26 @@ public struct ExchangeModel: Equatable {
         self.currency = currency
     }
 
-    private var sortedCurrencies: [(key: String, value: Double)] {
+    public var sortedCurrencies: [(key: String, value: Double)] {
         return currency.sorted(by: { $0.value < $1.value })
             .sorted(by: { first,_ in  first.key == "USD" })
     }
 
-    var currenciesKeys: [String] {
+    public var currenciesKeys: [String] {
         return sortedCurrencies.map { $0.key }
     }
 
-    var currenciesValues: [Double] {
+    public var currenciesValues: [Double] {
         return sortedCurrencies.map { $0.value }
     }
 
-    var emojiFlags: [String] {
+    public var emojiFlags: [String] {
         var flags = [String]()
         currenciesKeys.forEach { flags.append(formatEmojiFlag(regionCode: $0))}
         return flags
     }
 
-    var symbolCurrencies: [String] {
+    public var symbolCurrencies: [String] {
         var symbols = [String]()
         currenciesKeys.forEach { symbols.append(getSymbol(forCurrencyCode: $0)!)}
         return symbols
