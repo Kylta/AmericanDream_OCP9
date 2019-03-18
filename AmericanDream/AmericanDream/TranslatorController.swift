@@ -23,6 +23,10 @@ class TranslatorController: UIViewController {
         translatorView.pickerBotLanguage.delegate = self
         translatorView.pickerBotLanguage.dataSource = self
 
+        translatorView.topTextView.text = "Bonjour"
+        translatorView.botTextView.text = "Hello"
+        translatorView.pickerBotLanguage.selectRow(16, inComponent: 0, animated: true)
+
         translatorView.topTextView.delegate = self
     }
 

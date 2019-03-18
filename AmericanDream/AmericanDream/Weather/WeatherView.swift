@@ -61,7 +61,7 @@ class WeatherView: UIView {
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textAlignment = .center
-        label.text = "12°C"
+        label.text = "...°C"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -80,7 +80,7 @@ class WeatherView: UIView {
         let label = UILabel()
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.text = "23.45 km/h"
+        label.text = "... km/h"
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
