@@ -22,13 +22,17 @@
 		46ACD78E223FA216003D1D8B /* PickerController+TranslatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD78D223FA216003D1D8B /* PickerController+TranslatorController.swift */; };
 		46ACD790223FA238003D1D8B /* TextView+TranslatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD78F223FA238003D1D8B /* TextView+TranslatorController.swift */; };
 		46ACD796223FAD9C003D1D8B /* ServiceTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD795223FAD9C003D1D8B /* ServiceTranslator.swift */; };
+		46ACD79E223FB4B3003D1D8B /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD79D223FB4B3003D1D8B /* Loader.swift */; };
+		46ACD7A0223FB4CF003D1D8B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD79F223FB4CF003D1D8B /* HTTPClient.swift */; };
+		46ACD7A2223FB4DF003D1D8B /* RemoteExchangeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD7A1223FB4DF003D1D8B /* RemoteExchangeLoader.swift */; };
+		46ACD7A4223FB535003D1D8B /* URLSessionExchangeHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD7A3223FB535003D1D8B /* URLSessionExchangeHTTPClient.swift */; };
+		46ACD7A6223FB82E003D1D8B /* UIAlertController+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACD7A5223FB82E003D1D8B /* UIAlertController+UIViewController.swift */; };
 		46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */; };
 		46CA5060223AB5CA00E1BB0C /* TranslateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */; };
 		46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5062223AB68700E1BB0C /* json-helpers.swift */; };
 		46CA5069223AB8F400E1BB0C /* TranslatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5068223AB8F400E1BB0C /* TranslatorController.swift */; };
 		46CA506B223AB95600E1BB0C /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506A223AB95600E1BB0C /* TranslatorView.swift */; };
 		46CA506E223ABF7000E1BB0C /* ExchangeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */; };
-		46CA5070223AC09100E1BB0C /* ExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA506F223AC09100E1BB0C /* ExchangeService.swift */; };
 		46CA5072223CD72700E1BB0C /* ExchangeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CA5071223CD72700E1BB0C /* ExchangeServiceTests.swift */; };
 		46F3D482223CD94600E240F3 /* ExchangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D481223CD94600E240F3 /* ExchangeController.swift */; };
 		46F3D484223CD98F00E240F3 /* ExchangeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D483223CD98F00E240F3 /* ExchangeHeader.swift */; };
@@ -67,13 +71,17 @@
 		46ACD78D223FA216003D1D8B /* PickerController+TranslatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PickerController+TranslatorController.swift"; sourceTree = "<group>"; };
 		46ACD78F223FA238003D1D8B /* TextView+TranslatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+TranslatorController.swift"; sourceTree = "<group>"; };
 		46ACD795223FAD9C003D1D8B /* ServiceTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTranslator.swift; sourceTree = "<group>"; };
+		46ACD79D223FB4B3003D1D8B /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		46ACD79F223FB4CF003D1D8B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		46ACD7A1223FB4DF003D1D8B /* RemoteExchangeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteExchangeLoader.swift; sourceTree = "<group>"; };
+		46ACD7A3223FB535003D1D8B /* URLSessionExchangeHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExchangeHTTPClient.swift; sourceTree = "<group>"; };
+		46ACD7A5223FB82E003D1D8B /* UIAlertController+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+UIViewController.swift"; sourceTree = "<group>"; };
 		46CA505B223AB2B700E1BB0C /* TranslatorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorItem.swift; sourceTree = "<group>"; };
 		46CA505F223AB5CA00E1BB0C /* TranslateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateServiceTests.swift; sourceTree = "<group>"; };
 		46CA5062223AB68700E1BB0C /* json-helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "json-helpers.swift"; sourceTree = "<group>"; };
 		46CA5068223AB8F400E1BB0C /* TranslatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorController.swift; sourceTree = "<group>"; };
 		46CA506A223AB95600E1BB0C /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
 		46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeItem.swift; sourceTree = "<group>"; };
-		46CA506F223AC09100E1BB0C /* ExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeService.swift; sourceTree = "<group>"; };
 		46CA5071223CD72700E1BB0C /* ExchangeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeServiceTests.swift; sourceTree = "<group>"; };
 		46F3D481223CD94600E240F3 /* ExchangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeController.swift; sourceTree = "<group>"; };
 		46F3D483223CD98F00E240F3 /* ExchangeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeHeader.swift; sourceTree = "<group>"; };
@@ -122,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				46415254223AAF8D00A9F1FE /* AmericanTabBarController.swift */,
+				46ACD79D223FB4B3003D1D8B /* Loader.swift */,
+				46ACD79F223FB4CF003D1D8B /* HTTPClient.swift */,
 				46CA5061223AB67A00E1BB0C /* Helpers */,
 				46ACD77A223F8BF1003D1D8B /* Weather */,
 				46CA506C223ABF3900E1BB0C /* Exchange */,
@@ -185,6 +195,7 @@
 				46F3D487223CEB8100E240F3 /* UIColor-helpers.swift */,
 				46F3D489223CF47300E240F3 /* Rounded+Double.swift */,
 				46CA5062223AB68700E1BB0C /* json-helpers.swift */,
+				46ACD7A5223FB82E003D1D8B /* UIAlertController+UIViewController.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -194,10 +205,11 @@
 			children = (
 				46CA506D223ABF7000E1BB0C /* ExchangeItem.swift */,
 				46ACD776223F8B48003D1D8B /* ExchangeMapper.swift */,
+				46ACD7A3223FB535003D1D8B /* URLSessionExchangeHTTPClient.swift */,
 				46F3D485223CD9AA00E240F3 /* ExchangeCell.swift */,
-				46CA506F223AC09100E1BB0C /* ExchangeService.swift */,
 				46F3D481223CD94600E240F3 /* ExchangeController.swift */,
 				46F3D483223CD98F00E240F3 /* ExchangeHeader.swift */,
+				46ACD7A1223FB4DF003D1D8B /* RemoteExchangeLoader.swift */,
 			);
 			path = Exchange;
 			sourceTree = "<group>";
@@ -303,12 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				46ACD779223F8B71003D1D8B /* TranslatorMapper.swift in Sources */,
+				46ACD7A0223FB4CF003D1D8B /* HTTPClient.swift in Sources */,
 				46F3D486223CD9AA00E240F3 /* ExchangeCell.swift in Sources */,
 				46CA506B223AB95600E1BB0C /* TranslatorView.swift in Sources */,
 				46F3D484223CD98F00E240F3 /* ExchangeHeader.swift in Sources */,
 				46415255223AAF8D00A9F1FE /* AmericanTabBarController.swift in Sources */,
 				46ACD78A223F9329003D1D8B /* WeatherController.swift in Sources */,
-				46CA5070223AC09100E1BB0C /* ExchangeService.swift in Sources */,
 				46CA5063223AB68700E1BB0C /* json-helpers.swift in Sources */,
 				46ACD790223FA238003D1D8B /* TextView+TranslatorController.swift in Sources */,
 				46415253223AAF8D00A9F1FE /* AppDelegate.swift in Sources */,
@@ -316,13 +328,17 @@
 				46F3D48A223CF47300E240F3 /* Rounded+Double.swift in Sources */,
 				46CA505C223AB2B700E1BB0C /* TranslatorItem.swift in Sources */,
 				46ACD784223F8D6A003D1D8B /* WeatherService.swift in Sources */,
+				46ACD79E223FB4B3003D1D8B /* Loader.swift in Sources */,
 				46CA5069223AB8F400E1BB0C /* TranslatorController.swift in Sources */,
 				46ACD777223F8B49003D1D8B /* ExchangeMapper.swift in Sources */,
+				46ACD7A4223FB535003D1D8B /* URLSessionExchangeHTTPClient.swift in Sources */,
 				46ACD796223FAD9C003D1D8B /* ServiceTranslator.swift in Sources */,
 				46ACD788223F92F9003D1D8B /* WeatherView.swift in Sources */,
 				46ACD77C223F8C05003D1D8B /* WeatherMapper.swift in Sources */,
 				46F3D482223CD94600E240F3 /* ExchangeController.swift in Sources */,
 				46CA506E223ABF7000E1BB0C /* ExchangeItem.swift in Sources */,
+				46ACD7A6223FB82E003D1D8B /* UIAlertController+UIViewController.swift in Sources */,
+				46ACD7A2223FB4DF003D1D8B /* RemoteExchangeLoader.swift in Sources */,
 				46ACD77E223F8C22003D1D8B /* WeatherItem.swift in Sources */,
 				46ACD78E223FA216003D1D8B /* PickerController+TranslatorController.swift in Sources */,
 			);

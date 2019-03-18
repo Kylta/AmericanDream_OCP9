@@ -13,7 +13,7 @@ public struct ExchangeModel: Equatable {
     public let timestamp: Int
     public let date: String
     public let base: String
-    public let currency: Currency
+    public var currency: Currency
 
     public init(timestamp: Int, date: String, base: String, currency: Currency) {
         self.timestamp = timestamp
@@ -45,6 +45,12 @@ public struct ExchangeModel: Equatable {
         var symbols = [String]()
         currenciesKeys.forEach { symbols.append(getSymbol(forCurrencyCode: $0)!)}
         return symbols
+    }
+
+    mutating func updateCurrenciesValue(value: Double) {
+        var currencies = [String: Double]()
+        currency.forEach { currencies[$0.key] = Double($0.value * value).rounded(toPlaces: 3) }
+        self.currency = currencies
     }
 
     private func formatEmojiFlag(regionCode: String) -> String {

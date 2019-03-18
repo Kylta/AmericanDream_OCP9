@@ -38,12 +38,21 @@ class ExchangeRateTableViewController: UITableViewController, UITextFieldDelegat
     }
 
     private func fetch(number: Double) {
-        ServiceExchange.shared.downloadFromServer(value: number, completionHandler: { exchange in
-            DispatchQueue.main.async { [weak self] in
-                self?.exchangeModel = exchange
-                self?.tableView.reloadData()
+        let client = URLSessionExchangeHTTPClient()
+        let url = URL(string: "http://data.fixer.io/api/latest?access_key=356dae2235195b60bb99471f9de6c140&base?=EUR&symbols=USD,GBP,CAD,AUD,JPY,CNY,INR,SGD,BRL,IDR,VND,MXN")!
+        let loader = RemoteExchangeLoader(client: client, url: url)
+        loader.load { [weak self] result in
+            switch result {
+            case let .success(item):
+                self?.exchangeModel = item
+                self?.exchangeModel?.updateCurrenciesValue(value: number)
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
+            case let .failure(error):
+                self?.displayPopUpError(title: "Error", message: error.localizedDescription)
             }
-        })
+        }
     }
 
     private func settingTableView() {

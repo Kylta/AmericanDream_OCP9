@@ -68,12 +68,12 @@ internal final class ExchangeItemMapper: Decodable {
         return 200
     }
 
-    internal static func map(_ data: Data, _ response: HTTPURLResponse) -> ExchangeItemMapper? {
+    internal static func map(_ data: Data, _ response: HTTPURLResponse) -> RemoteExchangeLoader.Result {
         guard response.statusCode == OK_200,
-            let exchangeItemMapper = try? JSONDecoder().decode(ExchangeItemMapper.self, from: data) else {
-                return nil
+            let genericItemMapper = try? JSONDecoder().decode(ExchangeItemMapper.self, from: data) else {
+                return .failure(RemoteExchangeLoader.Error.invalidData)
         }
 
-        return exchangeItemMapper
+        return .success(genericItemMapper.genericItem)
     }
 }
