@@ -20,13 +20,17 @@ internal final class WeatherItemMapper: Decodable {
     var description: String {
         return weather.map { $0.description }.first!
     }
+    var icon: String {
+        return weather.map { $0.icon }.first!
+    }
     var weatherItem: WeatherItem {
-        return WeatherItem(name: name, date: date, weather: outsideWeather, description: description, temperature: temperature, wind: wind)
+        return WeatherItem(cityName: name, date: date, weather: outsideWeather, description: description, temperature: temperature, wind: wind, icon: icon)
     }
 
     struct Weather: Decodable {
         let main: String
         let description: String
+        let icon: String
     }
 
     enum CodingKeys: String, CodingKey {

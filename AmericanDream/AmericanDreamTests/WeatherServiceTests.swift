@@ -15,7 +15,7 @@ class WeatherServiceTests: XCTestCase {
         let exp = expectation(description: "wait for completion")
 
         WeatherService.shared.downloadFromServer(city: "Paris") { weather in
-            XCTAssertEqual(weather.name, "Paris")
+            XCTAssertEqual(weather.cityName, "Paris")
             exp.fulfill()
         }
 
