@@ -28,14 +28,13 @@ class WeatherController: UIViewController {
         fetchManually(with: "Paris")
 
         weatherTopView.cityTextField.delegate = self
-        guard let locationTopView = weatherTopView.cityNameLabel.text else { return }
+        guard let locationTopView = weatherTopView.cityTextField.text else { return }
 
         fetchManually(with: locationTopView)
 
         weatherBotView.cityTextField.delegate = self
         guard let locationBotView = weatherBotView.cityTextField.text else { return }
         fetchAutomatically(with: locationBotView)
-
     }
 
     override func viewWillAppear(_ animated: Bool) {
