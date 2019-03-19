@@ -34,8 +34,8 @@ class TranslatorController: UIViewController {
         translatorView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(translatorView)
         [translatorView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-         translatorView.leftAnchor.constraint(equalTo: view.leftAnchor),
-         translatorView.rightAnchor.constraint(equalTo: view.rightAnchor),
+         translatorView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+         translatorView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
          translatorView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)].forEach({$0.isActive = true})
     }
 
